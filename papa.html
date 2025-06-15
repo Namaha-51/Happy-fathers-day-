@@ -1,0 +1,197 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Father's Day</title>
+  <style>
+    :root {
+      --royal-blue: #1f3b73;
+      --royal-red: #c32f1f;
+      --gold-beige: #f6e7c1;
+      --white: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, var(--royal-blue), var(--royal-red));
+      background-size: 400% 400%;
+      animation: backgroundFloat 20s infinite linear;
+      color: var(--white);
+      overflow-x: hidden;
+      position: relative;
+    }
+    @keyframes backgroundFloat {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--gold-beige);
+      color: var(--royal-blue);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    .letter-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      max-width: 900px;
+    }
+    .letter-box {
+      background: var(--gold-beige);
+      padding: 2rem;
+      border-radius: 50px;
+      text-align: center;
+      color: var(--royal-blue);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: bounceIn 1.2s ease;
+      width: 100%;
+      max-width: 400px;
+      flex: 1 1 300px;
+    }
+    .letter-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+    .letter-box h2 {
+      font-size: 2rem;
+    }
+    .letter-box p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .open-btn {
+      background: var(--royal-red);
+      color: var(--white);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .open-btn:hover {
+      background: #962c23;
+    }
+    .memories {
+      background: var(--gold-beige);
+      color: var(--royal-blue);
+      margin: 3rem auto;
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    .memories p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .decor-left, .decor-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      opacity: 0.3;
+      animation: floatUpDown 3s ease-in-out infinite;
+    }
+    .decor-left {
+      left: 0;
+    }
+    .decor-right {
+      right: 0;
+    }
+    @keyframes floatUpDown {
+      0%, 100% { transform: translateY(-50%) translateY(0); }
+      50% { transform: translateY(-50%) translateY(-20px); }
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--gold-beige);
+      color: var(--royal-blue);
+      margin-top: 3rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .letter-box, .memories {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+      .letter-box h2 {
+        font-size: 1.5rem;
+      }
+      .open-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .decor-left, .decor-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="./dad-my-superhero-fathers-day-600nw-2459864421.webp" class="decor-left" alt="Decoration Left">
+  <img src="./hd-superman-super-dad-clipart-cartoon-with-kids-png-701751694947923ngrmnerne9.png" class="decor-right" alt="Decoration Right">
+
+  <header>
+    <h1>Happy Father's Day, Papa!</h1>
+    <p>You’ve given me everything without asking for anything in return.</p>
+  </header>
+
+  <div class="letter-section">
+    <div class="letter-box">
+      <h2>Your Special Message, Papa 🎁</h2>
+      <p>Click below to open your surprise</p>
+      <button class="open-btn" onclick="window.location.href='message.html'">OPEN</button>
+    </div>
+
+    <div class="letter-box">
+      <h2>Your Special Message, Chachu 🎁</h2>
+      <p>Click below to open your surprise</p>
+      <button class="open-btn" onclick="window.location.href='uncle.html'">OPEN</button>
+    </div>
+  </div>
+
+  <div class="memories">
+    <p>
+      From tickle fights and superhero impersonations to deep life talks and laughter over chai — every day has been memorable because of you both.<br />
+      Here's a tribute to all those moments that shaped our lives and filled them with warmth and joy. 💖
+    </p>
+  </div>
+
+  <footer>
+    From your forever fans — Naman and Naksh
+  </footer>
+</body>
+</html>

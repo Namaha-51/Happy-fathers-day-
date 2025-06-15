@@ -1,0 +1,96 @@
+<!-- message.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Father's Day Gift</title>
+  <style>
+    :root {
+      --royal-blue: #1f3b73;
+      --royal-red: #c0392b;
+      --gold-beige: #f6e7c1;
+      --white: #ffffff;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--gold-beige);
+      font-family: 'Georgia', serif;
+      color: var(--royal-blue);
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .message {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .message h2 {
+      color: var(--royal-red);
+      font-size: 2.5rem;
+    }
+    .message p {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      font-size: large;
+      background: var(--royal-blue);
+      color: var(--white);
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .back-btn {
+      margin-top: 2rem;
+      background: var(--royal-red);
+      color: var(--white);
+      padding: 0.7rem 1.4rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .back-btn:hover {
+      background: #962c23;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="message">
+      <h2>Dear Papa,</h2>
+      <p>
+        On this special day, I just want to say — thank you. For every silent sacrifice, every bedtime story,
+        every word of encouragement, and every smile you gave when I needed it most. 
+        You are my strength, my pride, and my forever hero.
+      </p>
+      <p>
+        I hope this small message brings you the same joy you’ve always brought into my life. 
+        Happy Father's Day, Papa. You mean the world to me.
+      </p>
+      <p style="font-style: italic; margin-top: 2rem;">With all my heart,<br>💙</p>
+    </div>
+    <button class="back-btn" onclick="window.location.href='papa.html'">Back to Home</button>
+  </div>
+
+  <footer>
+    💌
+  </footer>
+</body>
+</html>

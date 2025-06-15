@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You, Chachu ❤️</title>
+  <style>
+    :root {
+      --royal-blue: #1f3b73;
+      --royal-red: #c32f1f;
+      --gold-beige: #f6e7c1;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(-45deg, var(--royal-blue), var(--royal-red));
+      background-size: 400% 400%;
+      animation: backgroundFloat 20s infinite linear;
+      color: var(--white);
+      text-align: center;
+      overflow-x: hidden;
+      padding-bottom: 3rem;
+    }
+
+    @keyframes backgroundFloat {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header {
+      background: var(--gold-beige);
+      padding: 3rem 1.5rem;
+      color: var(--royal-blue);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .message-box {
+      background: var(--gold-beige);
+      color: var(--royal-blue);
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 700px;
+      border-radius: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      animation: bounceIn 1s ease-in;
+    }
+
+    .message-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .message-box p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      margin-top: 2rem;
+      background: var(--royal-red);
+      color: var(--white);
+      padding: 0.7rem 1.4rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #962c23;
+    }
+
+    footer {
+      background: var(--gold-beige);
+      color: var(--royal-blue);
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    /* Tablets and small screens */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .message-box {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+
+      .message-box h2 {
+        font-size: 1.5rem;
+      }
+
+      .message-box p {
+        font-size: 1rem;
+      }
+
+      .back-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+
+    /* Phones */
+    @media (max-width: 480px) {
+      header {
+        padding: 2rem 1rem;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      header p {
+        font-size: 0.95rem;
+      }
+
+      .message-box {
+        padding: 1.2rem;
+        margin: 1.5rem 1rem;
+        border-radius: 20px;
+      }
+
+      .message-box h2 {
+        font-size: 1.3rem;
+      }
+
+      .message-box p {
+        font-size: 0.95rem;
+      }
+
+      .back-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+
+      footer {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dear Chachu, You're Our Coolest Hero 😎</h1>
+    <p>Happy Father's Day to the most fun, chill, and loving Chachu!</p>
+  </header>
+
+  <div class="message-box">
+    <h2>Thank You for Being You ❤️</h2>
+    <p>
+      From childhood giggles to life talks that changed our world — you’ve always been more than just an uncle. You’re a mentor, a buddy, and the real MVP.<br><br>
+      You bring joy, guidance, and that irreplaceable swag that only you can pull off. Whether it was fun stories, teasing, or rescuing us from Chachi’s scolding — you’ve been our ultimate savior!<br><br>
+      Here's to all your jokes, your strength, warmth and looking cool in 40 xD. You're the best. ❤️
+    </p>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+
+  <footer>
+    💌 With love always!
+  </footer>
+</body>
+</html>
